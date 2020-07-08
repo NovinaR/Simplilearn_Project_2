@@ -1,0 +1,5 @@
+package com.feedback.exception;
+
+public class BusinessException {
+
+}

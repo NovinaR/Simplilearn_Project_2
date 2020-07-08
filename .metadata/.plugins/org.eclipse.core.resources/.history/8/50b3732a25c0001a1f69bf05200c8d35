@@ -1,0 +1,5 @@
+package com.feedback.service;
+
+public interface FeedbackService {
+
+}

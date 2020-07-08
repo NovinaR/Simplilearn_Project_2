@@ -1,0 +1,52 @@
+package com.feedback.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.feedback.dao.FeedbackDAO;
+import com.feedback.model.Feedback;
+import com.feedback.service.FeedbackService;
+
+public class FeedbackServiceImpl implements FeedbackService{
+	
+	@Autowired
+	FeedbackDAO dao;
+
+	@Override
+	public Feedback generateFeedback(Feedback feedback) {
+		// TODO Auto-generated method stub
+		return dao.save(feedback);
+	}
+
+	@Override
+	public Feedback updateFeedback(Feedback feedback) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Feedback getFeedbackById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Feedback> getAllFeedbacks() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Feedback> getFeedbacksBetweenRatings(float rating1, float rating2) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteFeedbackById(int id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
